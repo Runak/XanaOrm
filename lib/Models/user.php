@@ -17,7 +17,7 @@ class User extends StaticModel {
  
  
    public function getHash(){
-    return sha1($user->UserName .'PrivatePassword'.$user->Password)
+    return sha1($user->UserName .'PrivatePassword'.$user->Password);
    }
    
    public function ChangePassword(){
